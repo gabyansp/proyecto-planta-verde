@@ -1,0 +1,309 @@
+/* Importar la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f3f3eb;
+}
+
+nav {
+  font-family: "Poppins";
+  font-weight: 500;
+  background-color: #d4caac;
+  color: #fff;
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #bbb299;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-item {
+  margin-left: auto;
+}
+
+.navbar-nav a {
+  color: #318161;
+  text-decoration: none;
+  padding: 5px;
+  margin: 3px;
+  transition: .5s;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-nav a:hover {
+  background-color: #bbb299;
+  border-radius: 10px;
+}
+
+
+  .main {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -5;
+  } 
+  
+  .icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width:600px){
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .index.title{
+    margin-top: 1em;
+    font-size: 36px;
+    top: 100px;
+    position: relative;
+  }
+  
+  .title-text {
+    text-align: center;
+  }
+  
+  /*Footer*/
+  footer{
+    background-color: #318161;
+    color: #fff;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid #24684d;
+    padding: 10px;
+  }
+  
+  .footer-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin: 25px;
+  }
+  
+  .social-icons {
+    display: inline-block;
+    word-spacing: 30px;
+    margin: 25px;
+    font-size: 25px;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  footer img:hover{
+    transform: scale(1.2);
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden; 
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .first.title {
+    text-align: center;
+    padding: 30px 10px 10px 10px; /*Arriba,Derecha e Izquierda-abajo*/
+    margin: 25px 5px 0px 0px; /*Arriba,Derecha,Abajo,Izquierda*/
+    font-size: 20px;
+    position: relative;
+  }
+
+  /*Contenedor*/
+  .card {
+    margin-bottom: 10px;
+    border:none;
+    background-color: #f3f3eb;
+    border-radius: 10px; 
+  }
+
+  .card-head {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card-head img {
+    height: 330px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .card-head img:hover {
+    transform: scale(1.2);
+  }
+
+  .card-title {
+    color:#318161;
+  }
+
+  .card-text {
+    font-family: "Poppins";
+  }
+
+  .card-body h2 {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width:600px) {
+    .card-text {
+      font-size: 18px;
+    }    
+  }
+
+  .second-title {
+    text-align: center;
+  }
+
+  /*Blog*/
+  #video-container {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #video-container2 {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    #video-container {
+        margin: 20px auto; 
+    }
+    #video-container2 {
+      margin: 20px auto; 
+  }
+  }
+
+  /*Contacto*/
+  .form {
+    max-width: 600px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+    display: grid;
+    gap: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #318161;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #1d4d39;
+  }
+
+  @media screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+        margin: 20px auto; 
+    }
+  }
+
+  /*Plantas*/
+  .cont {
+    display:inline-block;
+    align-items: center;
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 20px;   
+  }
+
+  .cont img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px; 
+  }
+
+  .text-plant1 {
+    margin: 5px;
+    padding: 20px;
+  }
+
+  /*Macetas*/
+  .image-container1 {
+    max-width: 800px; 
+    margin: 50px auto;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+  }
+
+  .row1 img {
+    max-width: 30%; 
+    height: auto;
+    border-radius: 10px;
+  }
+
+
