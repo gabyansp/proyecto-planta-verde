@@ -1,0 +1,23 @@
+/*Blog*/
+#video-container {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #video-container2 {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+@media screen and (max-width: 600px) {
+    #video-container {
+        margin: 20px auto; 
+    }
+    #video-container2 {
+      margin: 20px auto; 
+  }
+}
