@@ -1,17 +1,45 @@
 /*Blog*/
-#video-container {
-    margin-top: 70px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
-
-  #video-container2 {
-    margin-top: 40px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
+.blog-top{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #318161;
+  height: 80px;
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        color:#f3f3eb
+    }
+}
+.video{
+    padding: 40px;
+    max-width: 1024px;
+    margin: 0 auto;
+    #video-container {
+       margin-top: 40px;
+       justify-content: center;
+       display: flex;
+       align-items: center;
+       iframe{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        padding: 5px;
+       }
+    }
+    #video-container2 {
+       margin-top: 40px;
+       justify-content: center;
+       display: flex;
+       align-items: center;
+       iframe{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        padding: 5px;
+       }
+    }
+}
 
 @media screen and (max-width: 600px) {
     #video-container {

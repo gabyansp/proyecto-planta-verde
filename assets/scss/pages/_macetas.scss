@@ -1,27 +1,15 @@
 /*Macetas*/
 .image-container1 {
-    max-width: 800px; 
-    margin: 50px auto;
-  .row1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; 
-    img {
-        max-width: 30%; 
-        height: auto;
-        border-radius: 10px;
-    }
+  max-width: 800px; 
+  margin: 50px auto;
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+  img {
+      max-width: 30%; 
+      height: auto;
+      border-radius: 10px;
   }
-  button {
-    padding: 10px;
-    background-color: #318161;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    &:hover {
-        background-color: #1d4d39;
-    }
-  }
+}
 }
